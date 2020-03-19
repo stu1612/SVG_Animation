@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#arm {
+    animation: arm 1s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#body, #right_speaker, #left_speaker {
+    animation: leftRight 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#hair, #earphones {
+    animation: upDown 1s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes arm {
+    from {
+        transform: scale(.99);
+    }
+    to {
+        transform: scale(.95);
+    }
+}
+
+@keyframes leftRight {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(11deg);
+    }
+}
+
+@keyframes upDown {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(15deg);
+    }
+}
+

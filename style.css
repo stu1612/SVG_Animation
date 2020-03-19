@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#arm {
+  -webkit-animation: arm 1s linear infinite alternate;
+          animation: arm 1s linear infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#body, #right_speaker, #left_speaker {
+  -webkit-animation: leftRight 1s ease-in-out infinite alternate;
+          animation: leftRight 1s ease-in-out infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#hair, #earphones {
+  -webkit-animation: upDown 1s ease-in-out infinite alternate;
+          animation: upDown 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes arm {
+  from {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+  to {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+
+@keyframes arm {
+  from {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+  to {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+
+@-webkit-keyframes leftRight {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(11deg);
+            transform: rotateY(11deg);
+  }
+}
+
+@keyframes leftRight {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(11deg);
+            transform: rotateY(11deg);
+  }
+}
+
+@-webkit-keyframes upDown {
+  from {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+  }
+}
+
+@keyframes upDown {
+  from {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
